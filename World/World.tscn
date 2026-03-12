@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cas7l61h5w5a8"]
+
+[ext_resource type="PackedScene" uid="uid://btdjq6n5yt05d" path="res://Models/Buildings/shack.tscn" id="1_folwd"]
+[ext_resource type="PackedScene" uid="uid://d1h08sxw0y4mq" path="res://Player/Player.tscn" id="2_y6flb"]
+
+[node name="World" type="Node3D" unique_id=856233429]
+
+[node name="Shack" parent="." unique_id=1523927766 instance=ExtResource("1_folwd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, -1)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Shack" unique_id=1941604987]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 5.5, -1.09278474e-07)
+spot_range = 8.5
+spot_angle = 63.503586
+
+[node name="Player" parent="." unique_id=1086411956 instance=ExtResource("2_y6flb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 1, -3)
